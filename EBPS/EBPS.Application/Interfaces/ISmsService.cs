@@ -9,6 +9,7 @@ namespace EBPS.Application.Interfaces
 {
     public interface ISmsService
     {
+        Task<object> SendSMS(string smsBody, string fromPhoneNumber, string toPhoneNumber);
         void SendPaymentSuccessNotification(Bill bill);
         void SendLowBalanceNotification(Wallet wallet, decimal amount);
     }
