@@ -12,6 +12,11 @@ namespace EBPS.Infrastructure.Services
 {
     public class SmsService : ISmsService
     {
+
+        // Find your Account SID and Auth Token at twilio.com/console
+
+        // and set the environment variables. See http://twil.io/secure
+
         string accountSid = Environment.GetEnvironmentVariable("TWILIO_ACCOUNT_SID");
 
         string authToken = Environment.GetEnvironmentVariable("TWILIO_AUTH_TOKEN");
